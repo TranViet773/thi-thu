@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+        <article class="group-box">
+            <div class="title">Thông tin Đăng ký</div>
+        
+        <form action="" onsubmit="return checkform(this);">
+        <table>
+        <tr>
+            <td>MSSV</td>
+            <td>
+                <input type="text" name="" id="mssv">
+            </td>
+        </tr>
+        <tr>
+            <td>Họ tên</td>
+            <td>
+                <input type="text" id="ten">
+            </td>
+        </tr>
+        <tr>
+            <td>Giới tính
+            </td>
+            <td>
+                <input type="radio" name="gtinh" id="nam">Nam
+                <input type="radio" name="gtinh" id="nu">Nữ
+            </td>
+        </tr>
+        <tr>
+            <td>Ngày sinh</td>
+            <td>
+                <input type="date" name="" id="bd">
+            </td>
+        </tr>
+        <tr>
+            <td>Quê Quán</td>
+            <td>
+                <textarea name="" id="country" cols="30" rows="3"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>SDT</td>
+            <td>
+                <input type="text" id="phone">
+            </td>
+        </tr>
+        <tr>
+            <td>E-mail</td>
+            <td>
+                <input type="text" name="" id="email">
+            </td>
+        </tr>
+        <tr>
+            <td>Ảnh đai diện</td>
+            <td>
+                <input type="file" name="" id="pict" value="Choose file">
+            </td>
+        </tr>
+        <tr>
+            <td>Mật Khẩu</td>
+            <td>
+                <input type="password" name="" id="mk">
+            </td>
+        </tr>
+        <tr>
+            <td>Nhập Lại mk</td>
+            <td>
+                <input type="password" name="" id="repw">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" name="" id="" value="Đăng ký">
+                <input type="reset" name="" id="" value="Hủy">
+            </td>
+        </tr>
+    </table>
+</form>
+</article>
+<script src="./script.js"></script>
+</body>
+</html>
+<!-- 
+MSSV: Không được rỗng, nhập đúng 8 ký tự
+ Họ tên, Giới tính, Quê quán, Ảnh đại diện: Không rỗng
+ Ngày sinh: Nhỏ hơn ngày hiện hành
+ Số ĐT: Nhập chuỗi số 10 ký tự
+ E-mail, Mật khẩu: Đúng chuẩn theo biểu thức chính qui
+ Nhập lại MK: Trùng khớp với Mật khẩu -->
